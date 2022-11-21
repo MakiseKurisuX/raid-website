@@ -1,0 +1,21 @@
+version: '3.9'
+
+volumes:
+  raid-website-volume:
+    name: raid-website-postgres-data
+
+services:
+  raid-website-service:
+    image: postgres
+    container_name: raid-website
+    ports:
+      - 5434:5434
+    expose:
+      - 5434
+    command: -p 5434
+    volumes:
+      - raid-website-volume:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: Secr3tPassw0rd123
+      POSTGRES_DB: postgres
+      ALLOW_IP_RANGE: 0.0.0.0/0
