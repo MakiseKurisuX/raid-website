@@ -210,7 +210,7 @@ export default function InnoFest(props: LandingBodyProps) {
               </Heading>
               <Text fontSize={{ base: "md", lg: "3xl" }} mb={5} textShadow="0 0 20px #ffffff" textAlign="center"><b>FRIDAY, 24 FEB 2023</b></Text>
               <Text fontSize={{ base: "md", lg: "2xl" }} mb={5}>
-                Join these specially curated courses to <b>upgrade your <i>"inno-stack"</i></b>!
+                Join these specially curated courses to <b>upgrade your <i>&#34;inno-stack&#34;</i></b>!
               </Text>
               <Grid
                 templateColumns={{
@@ -234,7 +234,7 @@ export default function InnoFest(props: LandingBodyProps) {
                   <Heading size={"lg"} mb={3} textAlign="center" color={nYellow[400]} backgroundColor={primary[700]} textShadow="0 0 20px #ffcd7e" py={{ md: 2 }} px={{ md: 2 }}>
                     Extended Reality
                   </Heading>
-                  <Text fontSize={{ lg: "md" }}>Virtual, Mixed, Augmented Reality - which is the most suitable and when? Attend the "Introduction to XR" by HelloHolo and learn about XR tech including a hands-on <b>experience using VR</b>.</Text>
+                  <Text fontSize={{ lg: "md" }}>Virtual, Mixed, Augmented Reality - which is the most suitable and when? Attend the &#34;Introduction to XR&#34; by HelloHolo and learn about XR tech including a hands-on <b>experience using VR</b>.</Text>
                   <Image align="center" src={"https://i.imgur.com/fITy7wJ.png"} width="100%" alt="" />
                 </GridItem>
               </Grid>
