@@ -43,7 +43,7 @@ export default function InnoFest(props: LandingBodyProps) {
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    const target = new Date("1/25/2023 11:59:59");
+    const target = new Date("2/3/2023 11:59:59");
 
     const Interval = setInterval(() => {
       const now = new Date();
@@ -87,211 +87,13 @@ export default function InnoFest(props: LandingBodyProps) {
               alt="SWiFT"
             />
 
-            <Link href="https://go.gov.sg/solvathon" fontSize={{ lg: "4xl" }}color={nYellow[400]}>
-              <Text as="span" textShadow="0 0 10px #ffcd7e"><b>Click here to submit your Solvathon entry!</b></Text>
+            <Link href="#courses" fontSize={{ lg: "xl" }}color={nYellow[400]}>
+              <Text as="span" textShadow="0 0 10px #ffcd7e"><b>Check out our Courses here!</b></Text>
             </Link>
 
-            <Box
-              marginTop={5}
-              textAlign="justify"
-              py={{ base: 10, md: 20 }}
-              px={{ base: 5, md: 20 }}
-              boxShadow={"base"}
-              rounded={"3xl"}
-              backgroundColor={primary[800]}
-              w="100%"
-              id="solvathon"
-            >
-              <Heading size={"4xl"} mb={5} textAlign="center" color={nYellow[400]}>
-                <Text fontFamily="Segoe Script" fontSize={{ base: "md", lg: "xl" }}><i>Innofest 22/23 Presents</i></Text>
-                <Text fontFamily="Century Gothic" className="glowtext1">SOLVATHON</Text>
-              </Heading>
-              <Text fontSize={{ base: "md", lg: "2xl" }} mb={5}>
-                The ideas of our innovators have solved many pain points of past.
-              </Text>
-              <Grid
-                templateColumns={{
-                  base: "repeat(2, 1fr) ",
-                  xl: "repeat(3, 1fr)",
-                }}
-                gap={3}
-                backgroundColor={primary[800]}
-                mb={18}
-                position="relative"
-                margin="0 auto"
-              >
-                <GridItem w="75%" key={0} margin="auto">
-                    <Image align="center" src={"https://i.gyazo.com/9da0564863849505a6f069d2b48dc820.png"} width="100%" alt="" />
-                    <Text fontSize={{ lg: "md" }} align="center">Digitising paper processes: MT Fleet App</Text>
-                </GridItem>
-                <GridItem w="75%" key={1} margin="auto">
-                    <Image align="center" src={"https://i.gyazo.com/992a564c04fcb42a217d4d7fb007eb4b.png"} width="100%" alt="" />
-                    <Text fontSize={{ lg: "md" }} align="center">Saving Manpower: Wingtip Sensors</Text>
-                </GridItem>
-                <GridItem w="75%" key={2} margin="auto">
-                    <Image align="center" src={"https://i.gyazo.com/6a703c5603bb680d393def72094effc3.png"} width="100%" alt="" />
-                    <Image align="center" src={"https://i.gyazo.com/bc8cd22c67704ed00f3f4a933178a361.png"} width="100%" alt="" />
-                    <Text fontSize={{ lg: "md" }} align="center">No more scratching or removal: CDA Sticker</Text>
-                </GridItem>
-              </Grid>
-              <Text fontSize={{ base: "md", lg: "2xl" }} mb={5}>
-                In our efforts to <b><i>#makeinnovationjoyful</i></b>, <Text as="span" color={nYellow[400]}>SW<i>i</i>FT</Text>{" "} wants to hear your pain
-                point AND partner you to solve the pain point through innovation!
-              </Text>
-              <Box
-              text-align="justify"
-              py={{ base: 10, md: 5 }}
-              px={{ base: 5, md: 5 }}
-              boxShadow={"base"}
-              rounded={"3xl"}
-              backgroundColor={primary[600]}
-              w="100%"
-              id="solvathon"
-              mb={5}
-              >
-                <Heading size={"lg"} mb={5} color={nYellow[400]} textShadow="0 0 20px #ffcd7e">
-                  What you need to do?
-                </Heading>
-                <List spacing={3} >
-                  <ListItem>
-                    <ListIcon as={ChevronRightIcon} color={nGreen[400]} />
-                    Bookmark <Link href="/innofest">this URL</Link> or join our <Link href="https://t.me/swiftoffice">SW<i>i</i>FT Telegram Channel</Link>.
-                  </ListItem>
-                  <ListItem>
-                    <ListIcon as={ChevronRightIcon} color={nGreen[400]} />
-                    <Text as="span" textShadow="0 0 10px #ffcd7e"><b>Jan 2023</b></Text>: Lookout for updates on this page, Telegram or OSN on how to submit your entry for SOLVATHON.
-                  </ListItem>
-                  <ListItem>
-                    <ListIcon as={ChevronRightIcon} color={nGreen[400]} />
-                    <Text as="span" textShadow="0 0 10px #ffcd7e"><b>9 Jan to 20 Jan 2023</b></Text>: Enter the portal most suited for you and submit your entry with the following details:
-                    <List spacing={1} >
-                      <ListItem>&emsp;&emsp;<ListIcon as={CheckIcon} />The pain point</ListItem>
-                      <ListItem>&emsp;&emsp;<ListIcon as={InfoOutlineIcon} />A proposed innovative solution</ListItem>
-                      <ListItem>&emsp;&emsp;<ListIcon as={PhoneIcon} />Your contact details</ListItem>
-                    </List>
-                  </ListItem>
-                  <ListItem>
-                    <ListIcon as={ChevronRightIcon} color={nGreen[400]} />
-                    <Text as="span" textShadow="0 0 10px #ffcd7e"><b>6 Feb 2023</b></Text> onwards: Lookout for the <Text as="span" color={nYellow[400]}>SOLVATHON</Text>{" "} poll
-                    and up-vote the entry you want to see SOLVED in the year ahead.
-                  </ListItem>
-                  <ListItem>
-                    <ListIcon as={ChevronRightIcon} color={nGreen[400]} />
-                    <Text as="span" textShadow="0 0 10px #ffcd7e"><b>23 Feb 2023</b></Text>: Top 3 voted entries stand to win attractive prizes at InnoFest!
-                  </ListItem>
-                  <Text fontSize={{ base: "md", lg: "lg" }} textAlign="center">
-                    <b>The Winning Entry of <Text as="span" color={nYellow[400]}>SOLVATHON</Text>{" "} will be announced and led by SW<i>i</i>FT Office to be SOLVED in 2023!</b>
-                  </Text>
-                </List>
-              </Box>
-              <Text fontSize={{ base: "md", lg: "2xl" }} mb={5}>
-                Join us on our <Link href="https://t.me/swiftoffice"><b>Telegram Channel</b></Link> or stay tuned to this page!
-              </Text>
-              <Text fontSize={{ base: "md", lg: "2xl" }}  mb={-5} textAlign="center" >
-              JAN <b className="glowtext1">9</b> 2023
-              </Text>
-              <Text fontSize={{ base: "md", lg: "2xl" }} textAlign="center"><b><i>#makinginnovationjoyful</i></b></Text>
-            </Box>
 
             <Box
-              marginTop={"24"}
-              textAlign="justify"
-              py={{ base: 10, md: 20 }}
-              px={{ base: 5, md: 20 }}
-              boxShadow={"base"}
-              rounded={"3xl"}
-              backgroundColor={primary[800]}
-              w="100%"
-              id="courses"
-            >
-              <Heading size={"3xl"} mb={10} textAlign="center" color={nYellow[400]} textShadow="0 0 20px #ffcd7e">
-                Upskill Yourself!
-                <br />
-              </Heading>
-              <Text fontSize={{ base: "md", lg: "3xl" }} mb={5} textShadow="0 0 20px #ffffff" textAlign="center"><b>FRIDAY, 24 FEB 2023</b></Text>
-              <Text fontSize={{ base: "md", lg: "2xl" }} mb={5}>
-                Join these specially curated courses to <b>upgrade your <i>&#34;inno-stack&#34;</i></b>!
-              </Text>
-              <Grid
-                templateColumns={{
-                  base: "repeat(2, 1fr) ",
-                  xl: "repeat(2, 1fr)",
-                }}
-                gap={2}
-                backgroundColor={primary[800]}
-                mb={18}
-                position="relative"
-              >
-                <GridItem w="85%" key={0} margin="0 auto">
-                  <Heading size={"lg"} mb={3} textAlign="center" color={nYellow[400]} backgroundColor={primary[700]} textShadow="0 0 20px #ffcd7e" py={{ md: 2 }} px={{ md: 2 }}>
-                    3D Printing
-                  </Heading>
-                  <Text fontSize={{ lg: "md" }} >Heard about 3D Printing but not sure what the fuss is all about? Join our 3-D printing 101 course conducted <b>on-premises by NYP</b>!</Text>
-                  <Image align="center" src={"https://revo-foods.com/wp-content/uploads/2022/07/Blog-3.jpg"} width="100%" alt="" />
-                    
-                </GridItem>
-                <GridItem w="85%" key={1} margin="0 auto">
-                  <Heading size={"lg"} mb={3} textAlign="center" color={nYellow[400]} backgroundColor={primary[700]} textShadow="0 0 20px #ffcd7e" py={{ md: 2 }} px={{ md: 2 }}>
-                    Extended Reality
-                  </Heading>
-                  <Text fontSize={{ lg: "md" }}>Virtual, Mixed, Augmented Reality - which is the most suitable and when? Attend the &#34;Introduction to XR&#34; by HelloHolo and learn about XR tech including a hands-on <b>experience using VR</b>.</Text>
-                  <Image align="center" src={"https://i.imgur.com/fITy7wJ.png"} width="100%" alt="" />
-                </GridItem>
-              </Grid>
-              <Grid
-                templateColumns={{
-                  base: "repeat(2, 1fr) ",
-                  xl: "repeat(2, 1fr)",
-                }}
-                gap={2}
-                backgroundColor={primary[800]}
-                mb={18}
-                position="relative"
-              >
-                <GridItem w="85%" key={0} margin="0 auto">
-                  <Heading size={"lg"} mb={3} textAlign="center" color={nYellow[400]} backgroundColor={primary[700]} textShadow="0 0 20px #ffcd7e" py={{ md: 2 }} px={{ md: 2 }}>
-                    Chatbot by DialogFlow
-                  </Heading>
-                  <Text fontSize={{ lg: "md" }} >Learn the basics of how to code your own chatbot and <b>innovate repetitive work processes away</b>! Join the Chatbot course to learn more.</Text>
-                  <Image align="center" src={"https://www.commbox.io/wp-content/uploads/2019/10/31-1.jpg"} width="100%" alt="" />
-                </GridItem>
-                <GridItem w="85%" key={1} margin="0 auto">
-                  <Heading size={"lg"} mb={3} textAlign="center" color={nYellow[400]} backgroundColor={primary[700]} textShadow="0 0 20px #ffcd7e" py={{ md: 2 }} px={{ md: 2 }}>
-                    Design Thinking
-                  </Heading>
-                  <Text fontSize={{ lg: "md" }}>Conducted by DCTD, get an in depth introduction to what Design Thinking is, along with an opportunity to <b>exercise the DT process</b> on an idea or project of your choice!</Text>
-                  <Image align="center" src={"https://lsb.edu.in/wp-content/uploads/2020/11/1_4THiK_g7e8NrzfOks6fYsQ-2.jpg"} width="100%" alt="" />
-                </GridItem>
-              </Grid>
-              <Heading size={"lg"} mb={5} textAlign="center" color={nYellow[400]} backgroundColor={primary[700]} textShadow="0 0 20px #ffcd7e" width="100%" py={{ md: 2 }} px={{ md: 2 }}>
-                Microsoft Stack 1.0
-              </Heading>
-              <Grid
-                templateColumns={{
-                  base: "repeat(2, 1fr) ",
-                  xl: "repeat(2, 1fr)",
-                }}
-                gap={2}
-                backgroundColor={primary[800]}
-                mb={18}
-                position="relative"
-                margin="0 auto"
-              >
-                <GridItem w="95%" key={0} margin="auto"><Text fontSize={{ lg: "md" }}>MS Stack 1.0 by our very own RSAF Data Office, RAiD is back! Learn how to <b>use the tech stack on OSN</b> to improve your daily work.</Text></GridItem>
-                <GridItem w="95%" key={1} margin="auto"><Image align="center" src={"https://i.imgur.com/AHF2a0s.png"} alt="" /></GridItem>
-              </Grid>
-
-              <br/>
-              <Text fontSize={{ base: "md", lg: "2xl" }} textAlign="center" mb={9}>
-                Slots for all the courses are limited! Sign up immediately at <Text as="span" textShadow="0 0 10px #ffffff"><b><Link href="https://go.gov.sg/upskill-innofest2223">go.gov.sg/upskill-innofest2223</Link></b></Text> or contact <Text as="span" textShadow="0 0 10px #ffffff"><b>zz All in SWiFT Office</b></Text> on OSN for more details.
-              </Text>
-              <Text fontSize={{ base: "md", lg: "2xl" }} textAlign="center" color={nYellow[400]} textShadow="0 0 20px #ffcd7e" mb={5}>
-                <b>Registrations close 10 Feb 2023!</b>
-              </Text>
-            </Box>
-
-            <Box
-              marginTop={"24"}
+              marginTop={"10"}
               textAlign="justify"
               py={{ base: 10, md: 20 }}
               px={{ base: 5, md: 20 }}
@@ -433,6 +235,106 @@ export default function InnoFest(props: LandingBodyProps) {
                 ))}
               </Grid>
             </Box>
+
+            
+            <Box
+              marginTop={"24"}
+              textAlign="justify"
+              py={{ base: 10, md: 20 }}
+              px={{ base: 5, md: 20 }}
+              boxShadow={"base"}
+              rounded={"3xl"}
+              backgroundColor={primary[800]}
+              w="100%"
+              id="courses"
+            >
+              <Heading size={"3xl"} mb={10} textAlign="center" color={nYellow[400]} textShadow="0 0 20px #ffcd7e">
+                Upskill Yourself!
+                <br />
+              </Heading>
+              <Text fontSize={{ base: "md", lg: "3xl" }} mb={5} textShadow="0 0 20px #ffffff" textAlign="center"><b>FRIDAY, 24 FEB 2023</b></Text>
+              <Text fontSize={{ base: "md", lg: "2xl" }} mb={5}>
+                Join these specially curated courses to <b>upgrade your <i>&#34;inno-stack&#34;</i></b>!
+              </Text>
+              <Grid
+                templateColumns={{
+                  base: "repeat(2, 1fr) ",
+                  xl: "repeat(2, 1fr)",
+                }}
+                gap={2}
+                backgroundColor={primary[800]}
+                mb={18}
+                position="relative"
+              >
+                <GridItem w="85%" key={0} margin="0 auto">
+                  <Heading size={"lg"} mb={3} textAlign="center" color={nYellow[400]} backgroundColor={primary[700]} textShadow="0 0 20px #ffcd7e" py={{ md: 2 }} px={{ md: 2 }}>
+                    3D Printing
+                  </Heading>
+                  <Text fontSize={{ lg: "md" }} >Heard about 3D Printing but not sure what the fuss is all about? Join our 3-D printing 101 course conducted <b>on-premises by NYP</b>!</Text>
+                  <Image align="center" src={"https://revo-foods.com/wp-content/uploads/2022/07/Blog-3.jpg"} width="100%" alt="" />
+                    
+                </GridItem>
+                <GridItem w="85%" key={1} margin="0 auto">
+                  <Heading size={"lg"} mb={3} textAlign="center" color={nYellow[400]} backgroundColor={primary[700]} textShadow="0 0 20px #ffcd7e" py={{ md: 2 }} px={{ md: 2 }}>
+                    Extended Reality
+                  </Heading>
+                  <Text fontSize={{ lg: "md" }}>Virtual, Mixed, Augmented Reality - which is the most suitable and when? Attend the &#34;Introduction to XR&#34; by HelloHolo and learn about XR tech including a hands-on <b>experience using VR</b>.</Text>
+                  <Image align="center" src={"https://i.imgur.com/fITy7wJ.png"} width="100%" alt="" />
+                </GridItem>
+              </Grid>
+              <Grid
+                templateColumns={{
+                  base: "repeat(2, 1fr) ",
+                  xl: "repeat(2, 1fr)",
+                }}
+                gap={2}
+                backgroundColor={primary[800]}
+                mb={18}
+                position="relative"
+              >
+                <GridItem w="85%" key={0} margin="0 auto">
+                  <Heading size={"lg"} mb={3} textAlign="center" color={nYellow[400]} backgroundColor={primary[700]} textShadow="0 0 20px #ffcd7e" py={{ md: 2 }} px={{ md: 2 }}>
+                    Chatbot by DialogFlow
+                  </Heading>
+                  <Text fontSize={{ lg: "md" }} >Learn the basics of how to code your own chatbot and <b>innovate repetitive work processes away</b>! Join the Chatbot course to learn more.</Text>
+                  <Image align="center" src={"https://www.commbox.io/wp-content/uploads/2019/10/31-1.jpg"} width="100%" alt="" />
+                </GridItem>
+                <GridItem w="85%" key={1} margin="0 auto">
+                  <Heading size={"lg"} mb={3} textAlign="center" color={nYellow[400]} backgroundColor={primary[700]} textShadow="0 0 20px #ffcd7e" py={{ md: 2 }} px={{ md: 2 }}>
+                    Design Thinking
+                  </Heading>
+                  <Text fontSize={{ lg: "md" }}>Conducted by DCTD, get an in depth introduction to what Design Thinking is, along with an opportunity to <b>exercise the DT process</b> on an idea or project of your choice!</Text>
+                  <Image align="center" src={"https://lsb.edu.in/wp-content/uploads/2020/11/1_4THiK_g7e8NrzfOks6fYsQ-2.jpg"} width="100%" alt="" />
+                </GridItem>
+              </Grid>
+              <Heading size={"lg"} mb={5} textAlign="center" color={nYellow[400]} backgroundColor={primary[700]} textShadow="0 0 20px #ffcd7e" width="100%" py={{ md: 2 }} px={{ md: 2 }}>
+                Microsoft Stack 1.0
+              </Heading>
+              <Grid
+                templateColumns={{
+                  base: "repeat(2, 1fr) ",
+                  xl: "repeat(2, 1fr)",
+                }}
+                gap={2}
+                backgroundColor={primary[800]}
+                mb={18}
+                position="relative"
+                margin="0 auto"
+              >
+                <GridItem w="95%" key={0} margin="auto"><Text fontSize={{ lg: "md" }}>MS Stack 1.0 by our very own RSAF Data Office, RAiD is back! Learn how to <b>use the tech stack on OSN</b> to improve your daily work.</Text></GridItem>
+                <GridItem w="95%" key={1} margin="auto"><Image align="center" src={"https://i.imgur.com/AHF2a0s.png"} alt="" /></GridItem>
+              </Grid>
+
+              <br/>
+              <Text fontSize={{ base: "md", lg: "2xl" }} textAlign="center" mb={9}>
+                Slots for all the courses are limited! Sign up immediately at <Text as="span" textShadow="0 0 10px #ffffff"><b><Link href="https://go.gov.sg/upskill-innofest2223">go.gov.sg/upskill-innofest2223</Link></b></Text> or contact <Text as="span" textShadow="0 0 10px #ffffff"><b>zz All in SWiFT Office</b></Text> on OSN for more details.
+              </Text>
+              <Text fontSize={{ base: "md", lg: "2xl" }} textAlign="center" color={nYellow[400]} textShadow="0 0 20px #ffcd7e" mb={5}>
+                <b>Registrations close 10 Feb 2023!</b>
+              </Text>
+            </Box>
+
+            
             
             <Box
               marginTop={24}
