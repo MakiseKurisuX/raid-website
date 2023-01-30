@@ -94,7 +94,7 @@ export default function InnoFest(props: LandingBodyProps) {
             
             <Image
               marginTop={"10"}
-              src="https://i.imgur.com/pzhhZNm.jpg"
+              src="https://i.imgur.com/mrb1jOY.jpg"
               alt="SWiFT"
             />
 
