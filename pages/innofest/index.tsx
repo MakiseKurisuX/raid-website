@@ -87,24 +87,43 @@ export default function InnoFest(props: LandingBodyProps) {
               alt="SWiFT"
             />
 
-            <Link href="#courses" fontSize={{ lg: "xl" }}color={nYellow[400]}>
-              <Text as="span" textShadow="0 0 10px #ffcd7e"><b>Check out our Courses here!</b></Text>
+            <Link href="#innofest" fontSize={{ lg: "xl" }}color={nYellow[400]}>
+              <Text as="span" textShadow="0 0 10px #ffcd7e"><b>Check out the InnoFest Schedule here!</b></Text>
+            </Link>
+
+
+            <Image
+              marginTop={"10"}
+              src="https://i.imgur.com/keDPY2p.jpg"
+              alt="Solvathon Voting"
+              id="solvathon"
+            />
+            <Link href="https://go.gov.sg/solvathon-vote" fontSize={{ lg: "xl" }}color={nYellow[400]}>
+              <Text as="span" textShadow="0 0 10px #ffcd7e"><b>Click here to vote for Solvathon!</b></Text>
             </Link>
 
             
             <Image
-              marginTop={"10"}
+              marginTop={"24"}
               src="https://i.imgur.com/mrb1jOY.jpg"
-              alt="SWiFT"
+              alt="InnoFest Schedule"
+              id="innofest"
             />
+            <Link href="https://t.me/RSAFInnofest" fontSize={{ lg: "xl" }}color={nYellow[400]}>
+              <Text as="span" textShadow="0 0 10px #ffcd7e"><b>Join the InnoFest Telegram for more Updates!</b></Text>
+            </Link>
 
             
             <Image
               marginTop={"24"}
-              mb={"48"}
+              
               src="https://i.imgur.com/odtGWSD.jpg"
-              alt="SWiFT"
+              alt="InnoFest Course"
+              id="courses"
             />
+            <Link href="https://go.gov.sg/upskill-innofest2223" mb={"48"} fontSize={{ lg: "xl" }}color={nYellow[400]}>
+              <Text as="span" textShadow="0 0 10px #ffcd7e"><b>Sign up for the Courses here!</b></Text>
+            </Link>
 
 
           </Container>
